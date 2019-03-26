@@ -1,0 +1,6 @@
+# latex compilation stuff
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
