@@ -16,6 +16,23 @@
 
 This example uses \texttt{natbib} for handling taxonomic author citations, that behave a bit different from usual bibliographic citations. For details see this blog post: https://gaballench.wordpress.com/2019/03/22/referencing-zoological-name-authorships-in-latex/
 
+The usage is pretty simple: Just install \texttt{zootaxa.bst} in a place where \texttt{bibtex} can find it and the compile a couple times with bibtex before compiling with latex. Rinse and repeat if needed. Also, don't forget to create your \texttt{bibtex} \texttt{.bib} bibliography file. Please note that three lines are absolutely necessary for this:
+
+\begin{verbatim}
+\documentclass{article}
+
+\usepackage{natbib}
+...
+...
+...
+\bibliographystyle{zootaxa}
+\bibliography{example-refs}
+
+\end{document}
+\end{verbatim}
+
+The command \texttt{usepackage} activates the \texttt{natbib} package necessary for managing references. The command \texttt{bibliographystyle} will tell the system to use \texttt{zootaxa.bst}. The command \texttt{bibliography} points the \texttt{.bib} file. Please note that the fact that we are not indicating paths indicates that 1) the files are in the path (in the case of the package if it was installed where the system can find it),  or the in working directory where the remaining files are found (e.g., the bibliography file). 
+
 The Instructions for Authors on zootaxa's website indicate that:
 
 
@@ -47,7 +64,7 @@ The style handles properly situations just like web pages through the \texttt{@m
 
 \section{Acknowledgements}
 
-First of all to the open source community for doing all this sharing and modification possible for newer and case-specific uses. I never thought there will be the day that one could prepare a manuscript for zootaxa entirely in \LaTeX and this is a step forward. This lat-hours project was indirectly funded by FAPESP through a doctoral scholarship. Many thanks to the Stack Overflow community. This as much of the software projects are speeded up a lot by its existence.
+First of all to the open source community for doing all this sharing and modification possible for newer and case-specific uses. I never thought there will be the day that one could prepare a manuscript for zootaxa entirely in \LaTeX and this is a step forward. This late-hours project was indirectly funded by FAPESP through a doctoral scholarship. Many thanks to the Stack Overflow community. This as much of the software projects are speeded up a lot by its existence.
 
 \bibliographystyle{zootaxa}
 \bibliography{example-refs}
