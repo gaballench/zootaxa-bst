@@ -14,6 +14,8 @@
 
 \maketitle
 
+This example uses \texttt{natbib} for handling taxonomic author citations, that behave a bit different from usual bibliographic citations. For details see this blog post: https://gaballench.wordpress.com/2019/03/22/referencing-zoological-name-authorships-in-latex/
+
 The Instructions for Authors on zootaxa's website indicate that:
 
 
@@ -35,11 +37,17 @@ Also, the separator between authors should the the ampersand (\&), and the abbre
 
 All of these aspects are handled automatically by \texttt{zootaxa.bst}. For instance, the following text will make use of several references that will be rendered into text according to rules of zootaxa, while generating the references also in the appropriate format.
 
+\section{Live example}
+
 Seven genus-group names based on extant taxa have been allocated to the Sphyraenidae: \textit{Agriosphyraena} \citealp{Fowler1903} (type \textit{Esox barracuda}), \textit{Australuzza} \citealp{Whitley1947} (type \textit{Sphyraena novaehollandiae}), \textit{Callosphyraena} \citealp{Smith1956} (type \textit{Sphyraema toxeuma}, junior synonym of \textit{Sphyraena forsteri}), \textit{Indosphyraena} \citealp{Smith1956} (type \textit{Sphyraena africana}), \textit{Sphyraenella} \citealp{Smith1956} (type \textit{Sphyraena flavicauda}), and \textit{Sphyraena} \citealp{Artedi1793} (type \textit{Esox sphyraena}). All of these genera are currently considered synonyms of \textit{Sphyraena}. \cite{Smith1956} elevated all the previous names to subgeneric rank, while \citet{DeSylva1963} deemed such actions unjustified, synonymizing all of these into \textit{Sphyraena} Röse (correct authorship is by Artedi instead).
 
 \citet{Santini2015} has presented an overview of six fossil species names associated with \textit{Sphyraena}; these authors mentioned \textit{Sphyraena fluctuosa} as a Sphyraenid species based on otolihts; however, such species was originally described by \citet{Nolf1972} in the genus \textit{Platycephalus} (Scorpaeniformes) and subsequently ratified in that genus \citep[e.g.,][]{Huyghebaert1979}. It is herein excluded from the Sphyraenid fossil species. \textit{Sphyraena intermedia} \citealp{Bassani1889} was mentioned also by Santini et al. without noting that another species of extant \textit{Sphyraena} was described with the same specific epithet \citep{Pastore2009}; therefore the latter species by Pastore is herein found to be primary homonym of \textit{Sphyraena intermedia} \citep{Bassani1889}, a fossil species known from the Oligocene of Italy and consequently the name by Pastore is deemed permanently invalid under Article 57.2 of the \citet{ICZN1999}.
 
-The style handles properly situations just like web pages through the \texttt{@misc} tag \citep[e.g., ][]{EschmeyerWeb} and book sections \citep{Switchenska1968,Bohm1924}
+The style handles properly situations just like web pages through the \texttt{@misc} tag \citep[e.g., ][]{EschmeyerWeb} and book sections \citep{Switchenska1968,Bohm1924}.
+
+\section{Acknowledgements}
+
+First of all to the open source community for doing all this sharing and modification possible for newer and case-specific uses. I never thought there will be the day that one could prepare a manuscript for zootaxa entirely in \LaTeX and this is a step forward. This lat-hours project was indirectly funded by FAPESP through a doctoral scholarship. Many thanks to the Stack Overflow community. This as much of the software projects are speeded up a lot by its existence.
 
 \bibliographystyle{zootaxa}
 \bibliography{example-refs}
