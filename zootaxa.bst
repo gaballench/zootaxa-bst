@@ -156,7 +156,7 @@ FUNCTION {output.urldate}
 { year empty$
     { "empty urldate in " cite$ * warning$ }
     { write$
-      " (" urldate * extra.label * ") " * 
+      " (" urldate * extra.label * ")" * 
       mid.sentence 'output.state := 
     }
   if$
