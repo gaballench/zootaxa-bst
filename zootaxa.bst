@@ -251,7 +251,7 @@ FUNCTION {format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{vv~}{ll}{, jj}{, f.}" format.name$ 't :=   % last name first
+    { s nameptr "{vv~}{ll}{, jj}{, f{.}.}" format.name$ 't :=   % {, f. separates lastname and initial}
       nameptr #1 >
 	{ namesleft #1 >
 	    { ", " * t * }

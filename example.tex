@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage[USenglish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks=true,citecolor=blue]{hyperref}
+
+\author{Gustavo A. Ballen}
+\date{\today}
+\title{An example manuscript using the \texttt{zootaxa.bst} reference style for Bib\TeX}
+
+\begin{document}
+
+\maketitle
+
+The Instructions for Authors on zootaxa's website indicate that:
+
+
+    A) Journal paper: 
+    Smith, A. (1999) Title of the paper. Title of the journal in full, volume number, page range. 
+
+    B) Book chapter: 
+    Smith, A. \& Smith, B. (2000) Title of the Chapter. In: Smith, A, Smith, B. \& Smith, C. (Eds), Title of Book. Publisher name and location, pp. x–y. 
+
+    C) Book: 
+    Smith, A., Smith, B. \& Smith, C. (2001) Title of Book. Publisher name and location, xyz pp.
+
+    D) Internet resources
+    Author (2002) Title of website, database or other resources, Publisher name and location (if indicated), number of pages (if known). Available from: http://xxx.xxx.xxx/ (Date of access).
+
+Dissertations resulting from graduate studies and non-serial proceedings of conferences/symposia are to be treated as books and cited as such. Papers not cited must not be listed in the references.
+
+Also, the separator between authors should the the ampersand (\&), and the abbreviation \textit{et allii} should be italized (\textit{et al.})
+
+All of these aspects are handled automatically by \texttt{zootaxa.bst}. For instance, the following text will make use of several references that will be rendered into text according to rules of zootaxa, while generating the references also in the appropriate format.
+
+Seven genus-group names based on extant taxa have been allocated to the Sphyraenidae: \textit{Agriosphyraena} \citealp{Fowler1903} (type \textit{Esox barracuda}), \textit{Australuzza} \citealp{Whitley1947} (type \textit{Sphyraena novaehollandiae}), \textit{Callosphyraena} \citealp{Smith1956} (type \textit{Sphyraema toxeuma}, junior synonym of \textit{Sphyraena forsteri}), \textit{Indosphyraena} \citealp{Smith1956} (type \textit{Sphyraena africana}), \textit{Sphyraenella} \citealp{Smith1956} (type \textit{Sphyraena flavicauda}), and \textit{Sphyraena} \citealp{Artedi1793} (type \textit{Esox sphyraena}). All of these genera are currently considered synonyms of \textit{Sphyraena}. \cite{Smith1956} elevated all the previous names to subgeneric rank, while \citet{DeSylva1963} deemed such actions unjustified, synonymizing all of these into \textit{Sphyraena} Röse (correct authorship is by Artedi instead).
+
+\citet{Santini2015} has presented an overview of six fossil species names associated with \textit{Sphyraena}; these authors mentioned \textit{Sphyraena fluctuosa} as a Sphyraenid species based on otolihts; however, such species was originally described by \citet{Nolf1972} in the genus \textit{Platycephalus} (Scorpaeniformes) and subsequently ratified in that genus \citep[e.g.,][]{Huyghebaert1979}. It is herein excluded from the Sphyraenid fossil species. \textit{Sphyraena intermedia} \citealp{Bassani1889} was mentioned also by Santini et al. without noting that another species of extant \textit{Sphyraena} was described with the same specific epithet \citep{Pastore2009}; therefore the latter species by Pastore is herein found to be primary homonym of \textit{Sphyraena intermedia} \citep{Bassani1889}, a fossil species known from the Oligocene of Italy and consequently the name by Pastore is deemed permanently invalid under Article 57.2 of the \citet{ICZN1999}.
+
+
+\bibliographystyle{zootaxa}
+\bibliography{example-refs}
+
+\end{document}
