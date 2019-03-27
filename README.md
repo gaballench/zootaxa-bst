@@ -41,8 +41,8 @@ Currently only Gustavo A. Ballen is involved in the development of this package.
 
 ## Bug reports and contributing
 
-Please feel free to send a pull request through github for improving the package. Also, you can send bug reports and suggestions for improvement; please ensure that you provide a reproducible instance along with your bug report (e.g., both the .tex file and the .bib file so that I can better understand what is going on).
+Please feel free to send a pull request through github for improving the package. Also, you can send bug reports and suggestions for improvement; please ensure that you provide a reproducible instance along with your bug report (e.g., both the .tex file and the .bib file that I can compile so that I can better understand what is going on).
 
 ## License
 
-This package is released under the LaTeX Project Public License in order to follow the license of the apa package on CTAN. See https://ctan.org/license/lppl1.3c for details. 
+This package is released under the LaTeX Project Public License in order to follow the license of the apa package on CTAN. See https://ctan.org/license/lppl1.3c for details and the file `LICENSE` for details.
