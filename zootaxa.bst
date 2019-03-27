@@ -3,7 +3,6 @@
 % Author: Gustavo A. Ballen
 % Maintainer: Gustavo A. Ballen
 % First-written:       <2019-mar-25>
-% Time-stamp:          <2019-mar-26 00:04:00>
 % Version: 1.0
 % Keywords: TeX, BibTeX, bst, zootaxa 
 % URL: https://github.com/gaballench/zootaxa-bst
