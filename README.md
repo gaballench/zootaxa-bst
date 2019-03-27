@@ -16,6 +16,19 @@ There are two ways:
 - Put the .bst file where latex can find it.
 - Put the .bst file in the same directory as your tex file so that it can be found during compilation. This method is preferred when you need the style file just for a single project and don't expect to needed later.
 
+Currently Ubuntu 18.x uses texlive2017 and therefore this package can not be installed using `tlmgr install`. Therefore we will need to install it to the personal packages (i.e., outside texlive's directories). This is what I did:
+
+```
+cd ~/
+tlmg init-usertree # this will throw some warning and stop because of version mismatch (texlive 2017 vs 2018)
+mkdir -p texmf/bibtex/bst # create the directory path where we will place the package 
+cd texmf/bibtex/bst
+git clone https://github.com/gaballench/zootaxa-bst.git # clone this repository
+texrehash ~/texmf # include texmf's directory tree to places where texlive will search
+```
+
+Afterwards, we can compile the document with bibtex and latex and `zootaxa.bst` will be found and used.
+
 ## Usage
 
 Please note that three lines are necessary for compiling with this reference style:
