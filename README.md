@@ -3,7 +3,7 @@ A .bst reference style for LaTeX
 
 ## Introduction
 
-This package provides a bst reference style file for the journal zootaxa that publishes contributions in zoology and classification. This is a fork of `apa.bst` as provided by texlive since this style file resembled the most Zootaxa's own style. Further modifications were made to the code in order to generate in-text citations and bibliography sections appropriately.
+This package provides a bst reference style file for the journal zootaxa that publishes contributions in zoology and classification. This is a fork of `apa.bst` as provided by texlive since this style file resembled the most Zootaxa's own style. Further modifications were made to the code in order to generate in-text citations and bibliography sections appropriately. Although I have not tested the style with tools other than the texlive distribution under linux, it is expected to work on any platform and distribution that the apa.bst file does. Please see below under 'Bug reports and contributing' if something is not behaving as expected.
 
 ## Download
 
